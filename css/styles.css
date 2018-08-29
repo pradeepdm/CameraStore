@@ -1,0 +1,98 @@
+/*
+
+Mallikarjun, Pradeep
+Jadran Id: jadrn020
+Project #2
+Spring 2018
+
+Reference: https://www.w3schools.com
+https://getbootstrap.com/
+
+*/
+
+
+.left-menu a:hover {
+    color: #a59003;
+}
+
+
+.left-menu {
+    width: 15%;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.left-menu a {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#products-list {
+    width: 85%;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color:  white;
+    border-radius: 15px;
+}
+
+#cart-list {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color:  white;
+    border-radius: 15px;
+}
+
+div.inline {
+    float: left;
+}
+
+.toggle-content {
+    padding: 10px;
+    text-align: center;
+}
+
+.confirm-table{
+    margin: 15px 5px 5px;
+    letter-spacing: 1.5px;
+}
+
+.confirm-table td{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.confirm-table th{
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.confirm-table b{
+    font-size: 18px;
+}
+
+#category-list-container {
+    margin-top: 20px;
+    padding: 10px;
+    min-height: 100px;
+    overflow: auto;
+}
+
+#items-list {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+

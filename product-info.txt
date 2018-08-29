@@ -1,0 +1,19 @@
+use jadrn020;
+
+INSERT INTO product (sku, catID, venID, manufacturerID ,description, features, cost, retail, quantity, image)
+VALUES('FUJ-123', '1' ,'8', 'FUJ56341', 'Point and shoot 24.3MP', 'Fuji Optical Zoom','500', '650', '10','FUJ-123.jpg');
+INSERT INTO product (sku, catID, venID, manufacturerID ,description, features, cost, retail, quantity, image)
+VALUES('FUJ-124', '2' ,'8', 'FUJ56342', 'Advanced Amateur', 'Fuji Optical Zoom','500', '650', '0','FUJ-124.jpg');
+INSERT INTO product (sku, catID, venID, manufacturerID ,description, features, cost, retail, quantity, image)
+VALUES('FUJ-125', '3' ,'8', 'FUJ56343', 'Point and shoot 24.3MP', 'Fuji Optical Zoom','500', '650', '4','FUJ-125.jpg');
+INSERT INTO product (sku, catID, venID, manufacturerID ,description, features, cost, retail, quantity, image)
+VALUES('FUJ-126', '4' ,'8', 'FUJ56344', 'Advanced Amateur 24.3MP', 'Fuji Optical Zoom','500', '650', '0','FUJ-126.jpg');
+INSERT INTO product (sku, catID, venID, manufacturerID ,description, features, cost, retail, quantity, image)
+VALUES('FUJ-127', '5' ,'8', 'FUJ56345', 'Point and shoot 24.3MP', 'Optical Underwater Zoom','500', '650', '6','FUJ-127.jpg');
+INSERT INTO product (sku, catID, venID, manufacturerID ,description, features, cost, retail, quantity, image)
+VALUES('FUJ-128', '6' ,'8', 'FUJ56346', 'Advanced Amateur 24.3MP', 'Fuji mirrorless','500', '650', '20','FUJ-128.jpg');
+INSERT INTO product (sku, catID, venID, manufacturerID ,description, features, cost, retail, quantity, image)
+VALUES('FUJ-129', '7' ,'8', 'FUJ56347', 'Underwater', '24.3MP Fuji SLR superzoom','500', '650', '0','FUJ-129.jpg');
+INSERT INTO product (sku, catID, venID, manufacturerID ,description, features, cost, retail, quantity, image)
+VALUES('FUJ-130', '1' ,'8', 'FUJ56348', 'Point and shoot 24.3MP', '24.3MP SLR Camera Film','500', '650', '2','FUJ-130.jpg');
+

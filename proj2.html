@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Mallikarjun, Pradeep
+     Jadran Id: jadrn020
+      Project #2
+     Spring 2018-->
+
+    <meta charset="UTF-8">
+    <title>Camera Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
+    <!--===============================================================================================-->
+    <script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+    <!--===============================================================================================-->
+    <script src="http://jadran.sdsu.edu/jquery/jQueryUI.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/proj2.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/checkout.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/display-cart-new.css">
+    <!--===============================================================================================-->
+    <script src="js/shopping-cart.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/cart-info.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/proj2.js"></script>
+</head>
+<body>
+<div class="container-menu-header">
+    <div class="topbar">
+        <span class="topbar-child1">
+					Exciting offers available. Hurry up!!!
+				</span>
+    </div>
+
+    <div class="wrap_header">
+        <!-- Logo -->
+        <a href="proj2.html" class="logo">
+            <img src="images/logo1.png" alt="IMG-LOGO">
+        </a>
+
+        <!-- Menu -->
+        <div class="wrap_menu">
+            <nav class="menu">
+                <ul class="main_menu">
+                    <li>
+                        <a href="proj2.html">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="product-checkout.html">Check out</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Header Icon -->
+        <div class="header-icons">
+            <div id="search-control">
+                <input id="search-box" type="text" name="search" placeholder="Search....">
+                <a id="search-icon" href="#"><img  width="20" src="images/icons/searchicon.png" alt=""></a>
+            </div>
+            <div class="header-wrapicon2">
+                <a href="product-checkout.html">
+                    <img id="cart-image" src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown"
+                         alt="ICON"></a>
+                <span id="cart-count" class="header-icons-noti">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="cart-wrapper">
+    <div class="clear inline left-menu">
+        <div id="items-list">
+            <ul class="toggle-content" style="display: block;">
+                <li class="checkbox">
+                    <a title="Product" id="nikon" href="#">Nikon</a>
+                </li>
+                <li class="checkbox">
+                    <a title="Product" id="canon" href="#">Canon</a>
+                </li>
+
+                <li class="checkbox">
+                    <a title="Product" id="olympus" href="#">Olympus</a>
+                </li>
+
+                <li class="checkbox">
+                    <a title="Product" id="lumix" href="#">Lumix</a>
+                </li>
+
+                <li class="checkbox">
+                    <a title="Product" id="pentax" href="#">Pentax</a>
+                </li>
+
+                <li class="checkbox">
+                    <a title="Product" id="leica" href="#">Leica</a>
+                </li>
+
+                <li class="checkbox">
+                    <a title="Product" id="sony" href="#">Sony</a>
+                </li>
+
+                <li class="checkbox" id="hol">
+                    <a title="Product" id="fuji" href="#">Fuji</a>
+                </li>
+            </ul>
+        </div>
+        <div id="category-list-container">
+            <div name="category" class="styled-select black rounded">
+                <select id="category" class="selectpicker">
+                    <option value="1">Select</option>
+                    <option value="2">DSLR</option>
+                    <option value="3">Point and Shoot</option>
+                    <option value="4">Advanced Amateur</option>
+                    <option value="5">Underwater</option>
+                    <option value="6">Film</option>
+                    <option value="7">mirrorless</option>
+                    <option value="8">superzoom</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+    <div id="products-list" class="row inline">
+
+    </div>
+</div>
+</body>
+</html>

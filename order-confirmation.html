@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Mallikarjun, Pradeep
+     Jadran Id: jadrn020
+      Project #2
+     Spring 2018-->
+
+
+    <meta charset="UTF-8">
+    <title>Confirmation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+    <!--===============================================================================================-->
+    <script src="http://jadran.sdsu.edu/jquery/jQueryUI.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/proj2.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/checkout.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/product-checkout.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/order-confirmation.css"/>
+    <!--===============================================================================================-->
+    <script src="js/shopping-cart.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/cart-info.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/order-confirmation.js"></script>
+
+</head>
+<body>
+<div class="container-menu-header">
+    <div class="topbar">
+        <span class="topbar-child1">
+					Exciting offers available. Hurry up!!!
+				</span>
+    </div>
+
+    <div class="wrap_header">
+        <!-- Logo -->
+        <a href="proj2.html" class="logo">
+            <img src="images/logo1.png" alt="IMG-LOGO">
+        </a>
+
+        <!-- Menu -->
+        <div class="wrap_menu">
+            <nav class="menu">
+                <ul class="main_menu">
+                    <li>
+                        <a href="proj2.html">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="product-checkout.html">Check out</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+</div>
+
+<div id="confirmation-info">
+    Thanks for your order
+</div>
+
+<div id="checkout-wrapper-order" class="bo9 w-size90 set-b-w">
+
+    <div class="order-checkout bo9 w-size90 p-l-20 p-r-20 p-t-20 p-b-20 m-t-20 set-bc">
+        <div id="o-h">Order Confirmation</div>
+        <p id="con-content">Thanks for shopping with Camera Store. We received your order, and we're processing it now.
+            <br> Please see the details below.</p>
+
+        <div id="customer-details">
+        </div>
+
+    </div>
+
+    <div class="order-checkout bo9 w-size90 p-l-20 p-r-20 p-t-20 p-b-20 m-t-20">
+
+        <div class="shopping-cart">
+
+            <div class="column-labels">
+                <label class="product-image">Image</label>
+                <label class="product-details">Product</label>
+                <label class="product-price">Price</label>
+                <label class="product-quantity-1">Quantity</label>
+                <label class="product-line-price">Total</label>
+            </div>
+
+            <div id="product-checkout-details"></div>
+        </div>
+
+        <div class="totals">
+            <div class="totals-item">
+                <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal"></div>
+            </div>
+            <div class="totals-item">
+                <label>Tax (7.5%)</label>
+                <div class="totals-value" id="cart-tax"></div>
+            </div>
+            <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping"></div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

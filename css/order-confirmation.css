@@ -1,0 +1,55 @@
+/*
+
+Mallikarjun, Pradeep
+Jadran Id: jadrn020
+Project #2
+Spring 2018
+
+*/
+
+
+.set-b-w {
+    background-color: white;
+}
+
+#confirmation-info {
+    font-size: 100px;
+    margin-top: 100px;
+    padding: 30px;
+    margin-left: 50px;
+}
+
+#checkout-wrapper-order {
+    margin-left: 30px;
+    margin-right: 50px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.order-checkout {
+    min-height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+#o-h {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sh-address {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.product-quantity-1 {
+    float: left;
+    width: 10%;
+    text-align: center;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Mallikarjun, Pradeep
+     Jadran Id: jadrn020
+      Project #2
+     Spring 2018-->
+
+    <meta charset="UTF-8">
+    <title>Billing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+    <!--===============================================================================================-->
+    <script src="http://jadran.sdsu.edu/jquery/jQueryUI.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/proj2.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/checkout.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/order-confirmation.css"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/product-checkout.css">
+    !--===============================================================================================-->
+    <script src="js/shopping-cart.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/cart-info.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/place-order.js"></script>
+
+
+</head>
+<body>
+<div class="container-menu-header">
+    <div class="topbar">
+        <span class="topbar-child1">
+					Exciting offers available. Hurry up!!!
+        </span>
+    </div>
+
+    <div class="wrap_header">
+        <!-- Logo -->
+        <a href="proj2.html" class="logo">
+            <img src="images/logo1.png" alt="IMG-LOGO">
+        </a>
+
+        <!-- Menu -->
+        <div class="wrap_menu">
+            <nav class="menu">
+                <ul class="main_menu">
+                    <li>
+                        <a href="proj2.html">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="product-checkout.html">Check out</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Header Icon -->
+        <div class="header-icons">
+            <div class="header-wrapicon2">
+                <a href="product-checkout.html">
+                    <img id="cart-image" src="images/icons/icon-header-02.png"
+                         class="header-icon1 js-show-header-dropdown"
+                         alt="ICON"></a>
+                <span id="cart-count" class="header-icons-noti">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="checkout-wrapper" class="bo9 w-size90 set-b">
+    <h2 id="checkout-id">Checkout Form</h2>
+    <form name="order" id="form2">
+        <div id="hiddendiv">
+            <input type="hidden" name="SKUNumber"/>
+            <input type="hidden" name="Quantity"/>
+            <input type="hidden" name="CostPrice"/>
+            <input type='hidden' name='Price'/>
+            <input type="hidden" name="Title"/>
+            <input type="hidden" name="Tax"/>
+            <input type="hidden" name="Shipping"/>
+            <input type="hidden" name="Total"/>
+        </div>
+        <table>
+            <tr>
+                <td><label>First Name:</label></td>
+                <td><input type="text" class="form-control" name="fname" size="30"/></td>
+                <td><label>Last Name:</label></td>
+                <td><input type="text" class="form-control" name="lname" id="lname" size="30"/></td>
+            </tr>
+            <tr>
+                <td><label>Phone:</label></td>
+                <td>
+                    <div class="col-xs-3" id="col-xs-3-np">
+                        <input type="tel" name="areacode" id="hareacode" class="form-control" value="" size="3"
+                               maxlength="3" title="">
+                    </div>
+
+                    <div class="col-xs-3">
+                        <input type="tel" name="prefix" id="hprefix" class="form-control" value="" size="3"
+                               maxlength="3">
+                    </div>
+
+                    <div class="col-xs-4">
+                        <input type="tel" name="phone" id="hphone" class="form-control" value="" size="4" maxlength="4">
+                    </div>
+                </td>
+                <td><label>Email:</label></td>
+                <td colid="5"><input type="text" class="form-control" name="email" size="25"/>
+                </td>
+            </tr>
+            <tr>
+                <td><h3 class="orders-heading">Shipping Details</h3></td>
+            </tr>
+            <tr>
+                <td><label>Address:</label></td>
+                <td><input type="text" class="form-control" name="s_address1" size="50"/></td>
+            </tr>
+            <tr>
+                <td><label>City:</label></td>
+                <td><input type="text" class="form-control" name="s_city" size="10"/></td>
+                <td><label class="labelz">Zipcode:</label></td>
+                <td><input type="text" class="form-control" name="s_zip" size="11" maxlength="5"/></td>
+                <td><label class="label1">State:</label></td>
+                <td><input type="text" class="form-control" name="s_state" size="3" maxlength="3"/></td>
+            </tr>
+            <tr>
+                <td><h3 class="orders-heading">Payment Details</h3></td>
+            </tr>
+            <tr>
+                <td><label>Name on Card:</label></td>
+                <td colid="5"><input type="text" class="form-control" name="nameonc" size="30"/></td>
+                <td><label>Payment Type:</label></td>
+                <td colid="5">
+                    <label class="radio-inline"><input type="radio" name="cardpayment" value="credit" checked="checked">Credit
+                        Card</label>
+                    <label class="radio-inline"><input type="radio" name="cardpayment" value="debit">Debit Card</label>
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td><label>Card Type:</label></td>
+                <td colid="5"><select id="crtype" name="crtype" class="dropdown1">
+                    <option value="cr1">American Express</option>
+                    <option value="cr2">Master</option>
+                    <option value="cr3">Visa</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>Card Number:</label></td>
+                <td colid="5"><input type="text" class="form-control" name="cardno" size="30" maxlength="16"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Valid Through:</label></td>
+                <td><input type="text" class="form-control" name="month" size="2" maxlength="2" placeholder="mm"/></td>
+                <td><input type="text" class="form-control" name="year" maxlength="4" size="4" placeholder="yyyy"/></td>
+                <td><label class="label1">CVV:</label></td>
+                <td><input type="text" class="form-control" name="cvv" maxlength="4" size="4"/></td>
+            </tr>
+            <tr>
+                <td><h3 class="orders-heading">Billing Details</h3></td>
+            </tr>
+            <tr>
+                <td><label class="checkbox-inline"><input name="sameaddr" type="checkbox" value="selected">Same as
+                    Shipping</label></td>
+            </tr>
+            <tr>
+                <td><label>Address:</label></td>
+                <td colid="5"><input type="text" class="form-control" name="b_address1" size="50"/></td>
+            </tr>
+            <tr>
+                <td><label>City:</label></td>
+                <td><input type="text" class="form-control" name="b_city" size="10"/></td>
+                <td><label class="labelz">Zipcode:</label></td>
+                <td><input type="text" class="form-control" name="b_zip" size="11" id="s_zip" maxlength="5"/></td>
+                <td><label class="label1">State:</label></td>
+                <td><input type="text" class="form-control" name="b_state" size="3" maxlength="3"/></td>
+            </tr>
+        </table>
+
+        <div id="display-error-message">&nbsp;</div>
+
+        <div id="button-line">
+            <input class="btn btn-success" type="reset"/>
+            <input type="button" class="btn btn-info" value="Continue" name="submit-order" id="confirm"/>
+        </div>
+
+    </form>
+
+    <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Order Summary</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="bo9 p-l-20 p-r-20 p-t-20 p-b-20 set-bc">
+                        <div id="customer-details">
+                        </div>
+                    </div>
+                    <div class="order-checkout-modal bo9 p-l-20 p-r-20 p-t-20 p-b-20 m-t-20">
+
+                        <div class="shopping-cart">
+
+                            <div class="column-labels">
+                                <label class="product-image">Image</label>
+                                <label class="product-details">Product</label>
+                                <label class="product-price">Price</label>
+                                <label class="product-quantity-1">Quantity</label>
+                                <label class="product-line-price">Total</label>
+                            </div>
+
+                            <div id="product-checkout-details"></div>
+                        </div>
+
+                        <div class="totals">
+                            <div class="totals-item">
+                                <label>Subtotal</label>
+                                <div class="totals-value" id="cart-subtotal"></div>
+                            </div>
+                            <div class="totals-item">
+                                <label>Tax (7.5%)</label>
+                                <div class="totals-value" id="cart-tax"></div>
+                            </div>
+                            <div class="totals-item">
+                                <label>Shipping</label>
+                                <div class="totals-value" id="cart-shipping"></div>
+                            </div>
+                            <div class="totals-item totals-item-total">
+                                <label>Grand Total</label>
+                                <div class="totals-value" id="cart-total"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" id="place-order" class="btn btn-primary">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

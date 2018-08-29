@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Mallikarjun, Pradeep
+     Jadran Id: jadrn020
+      Project #2
+     Spring 2018-->
+
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+    <!--===============================================================================================-->
+    <script src="http://jadran.sdsu.edu/jquery/jQueryUI.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/proj2.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/checkout.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/product-checkout.css">
+    <!--===============================================================================================-->
+    <script src="js/shopping-cart.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/cart-info.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/product-checkout.js"></script>
+</head>
+<body>
+<div class="container-menu-header">
+    <div class="topbar">
+        <span class="topbar-child1">
+					Exciting offers available. Hurry up!!!
+        </span>
+    </div>
+    <div class="wrap_header">
+        <!-- Logo -->
+        <a href="proj2.html" class="logo">
+            <img src="images/logo1.png" alt="IMG-LOGO">
+        </a>
+
+        <!-- Menu -->
+        <div class="wrap_menu">
+            <nav class="menu">
+                <ul class="main_menu">
+                    <li>
+                        <a href="proj2.html">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="product-checkout.html">Check out</a>
+                    </li>
+
+
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+</div>
+<div id="prod-checkout" class="bo9 w-size90 p-l-20 p-r-20 p-t-20 p-b-20 m-t-20 set-b">
+    <div class="shopping-cart">
+
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price">Total</label>
+        </div>
+
+        <div id="product-checkout-details"></div>
+    </div>
+
+    <div class="totals">
+        <div id="show-alert" class="alert alert-warning">
+            <strong>The current item is running out of stock !! Please reduce the quantity. </strong>
+        </div>
+        <div class="totals-item">
+            <label>Subtotal</label>
+            <div class="totals-value" id="cart-subtotal"></div>
+        </div>
+        <div class="totals-item">
+            <label>Tax (7.5%)</label>
+            <div class="totals-value" id="cart-tax"></div>
+        </div>
+        <div class="totals-item">
+            <label>Shipping</label>
+            <div class="totals-value" id="cart-shipping"></div>
+        </div>
+        <div class="totals-item totals-item-total">
+            <label>Grand Total</label>
+            <div class="totals-value" id="cart-total"></div>
+        </div>
+    </div>
+
+    <div>
+        <button id="checkout-click" class="set-size flex-c-m bg1 bo-rad-23 hov1 s-text1 trans-0-4 pull-right">
+            Check out
+        </button>
+    </div>
+
+</div>
+</body>
+</html>
